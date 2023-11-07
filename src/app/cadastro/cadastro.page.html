@@ -1,0 +1,49 @@
+<ion-content class="background" [fullscreen]="true">
+  <ion-header collapse="condense">
+   <ion-toolbar>
+     
+   </ion-toolbar>
+ </ion-header>
+   
+
+   <ion-list class="container background-gray">      
+
+     <ion-item>  
+        <h1> Cadastro do Mesa Fácil </h1>  
+        <ion-label color= "light" position="floating"> Nome Completo: </ion-label>
+        <ion-input  type="text"></ion-input>
+     </ion-item>
+     <ion-item>    
+        <ion-label color= "light" position="floating"> CPF: </ion-label>
+        <ion-input type="text" placeholder="###.###.###-##" color="light"></ion-input>
+     </ion-item>
+     <ion-item>    
+      <ion-label position="floating">Data de nascimento</ion-label>
+      <ion-input [(ngModel)]="dateOfBirth" name="dateOfBirth" type="date"></ion-input>
+     </ion-item>
+     <ion-item>    
+        <ion-label color= "light" position="floating"> E-mail: </ion-label>
+        <ion-input type="email" placeholder="Fulano@gmail.com" color="light"></ion-input>
+     </ion-item>
+     <ion-item>    
+        <ion-label color= "light" position="floating"> Nome do Usuário: </ion-label>
+        <ion-input type="text"></ion-input>
+     </ion-item>
+     <ion-item>    
+        <ion-label color= "light" position="floating"> Senha: </ion-label>
+        <ion-input  type="password"></ion-input>
+     </ion-item>
+     <ion-item> 
+        <ion-label color= "light" position="floating"> Confirmar Senha: </ion-label>
+        <ion-input type="password"></ion-input>  
+     </ion-item>
+     
+   </ion-list>
+   <ion-button color="warning">Cadastrar</ion-button>
+
+   <br><br>
+
+   <ion-button class="meu-botao" color="null">Já possuo Cadastro?</ion-button>
+  
+</ion-content>
+

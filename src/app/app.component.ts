@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import { register } from 'swiper/element/bundle';
+
+register();
+
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
+})
+export class AppComponent {
+  public appPages = [
+    { title: 'login', url: '/folder/inbox', icon: 'person-circle' },
+  ];
+  public labels = [];
+  constructor() {}
+}
